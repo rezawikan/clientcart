@@ -67,18 +67,18 @@ module.exports = {
   },
 
   axios: {
-    baseURL: 'http://cart.test:8080/api'
+    baseURL: 'http://cart.host:8080/api'
   },
   // vendor: ["lodash"],
   plugins: [
     '@/plugins/mixins/pluralize',
-    '@/plugins/fontawesome'
+    // '@/plugins/carousel
   ],
 
   // include bootstrap css
   css: [
     '@/assets/scss/main.scss',
-    '@fortawesome/fontawesome-svg-core/styles.css',
+    '@/assets/scss/carousel.scss',
   ],
   /*
    ** Customize the progress bar color
@@ -96,7 +96,7 @@ module.exports = {
     postcss: {
       plugins: {
         'postcss-custom-properties': false
-      },
+      }
     },
     /*
      ** Run ESLint on save

@@ -1,6 +1,8 @@
 @import '~bulma/sass/utilities/initial-variables';
 @import '~bulma/sass/utilities/functions';
 
+$button-border-width : 0;
+$radius: 0;
 
 @import '~bulma';
 @import '~assets/scss/megamenu';

@@ -1,0 +1,10 @@
+$white: white;
+$text: white;
+
+
+$carousel-nav-background	: rgba($white, 0.7);
+$carousel-nav-color	: $text;
+$carousel-title-background:	rgba($white, 0.6);
+$carousel-title-size: 1em;
+
+@import '~bulma-extensions/bulma-carousel/dist/css/bulma-carousel.sass'
