@@ -13,11 +13,6 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.13",
-    "@fortawesome/free-brands-svg-icons": "^5.7.0",
-    "@fortawesome/free-regular-svg-icons": "^5.7.0",
-    "@fortawesome/free-solid-svg-icons": "^5.7.0",
-    "@fortawesome/vue-fontawesome": "^0.1.5",
     "@nuxtjs/auth": "^4.5.3",
     "@nuxtjs/axios": "^5.3.6",
     "bootstrap-vue": "^2.0.0-rc.11",
@@ -25,10 +20,8 @@
     "bulma-extensions": "^4.0.1",
     "css-loader": "^2.1.0",
     "nuxt": "^2.0.0",
-    "nuxt-fontawesome": "^0.4.0",
     "nuxt-sass-resources-loader": "^2.0.5",
-    "query-string": "^6.2.0",
-    "v-owl-carousel": "^1.0.8"
+    "query-string": "^6.2.0"
   },
   "devDependencies": {
     "acorn": "^6.0.6",

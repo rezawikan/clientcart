@@ -1,8 +1,21 @@
 @import '~bulma/sass/utilities/initial-variables';
 @import '~bulma/sass/utilities/functions';
 
+
 $button-border-width : 0;
 $radius: 0;
 
+
 @import '~bulma';
 @import '~assets/scss/megamenu';
+
+
+html {
+  font-size: 12px;
+  @include tablet {
+    font-size: 14px;
+  }
+  @include desktop {
+    font-size: 14px;
+  }
+}

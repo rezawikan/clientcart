@@ -1,9 +1,7 @@
 <template>
 <div>
-
   <Navigation/>
-  <FrontCarousel/>
-  <nuxt />
+  <nuxt/>
 </div>
 </template>
 
@@ -14,9 +12,9 @@ import FrontCarousel from '@/components/carousel/FrontCarousel'
 
 export default {
   components: {
-    Navigation,
-    FrontCarousel
-  }
+    Navigation
+  },
+  
 }
 </script>
 

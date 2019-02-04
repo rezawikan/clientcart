@@ -27,7 +27,7 @@
       <template v-if="section > 1">
         <li>
           <nuxt-link
-          class="pagination-link"
+          class="pagination-link is-primary"
           :to="{ query: Object.assign({}, queries, { page :1 }) }"
           >
           1

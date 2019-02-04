@@ -30,14 +30,17 @@ module.exports = {
         href: 'https://use.fontawesome.com/releases/v5.7.0/css/all.css',
         integrity: 'sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ',
         crossorigin: 'anonymous'
-      }
-    ]
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/npm/bulma-pageloader@2.1.0/dist/css/bulma-pageloader.min.css'
+      }]
   },
 
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/auth',
-    'nuxt-fontawesome',
+    // 'nuxt-fontawesome',
   ],
   auth: {
 
@@ -67,7 +70,7 @@ module.exports = {
   },
 
   axios: {
-    baseURL: 'http://cart.host:8080/api'
+    baseURL: 'http://cart.test:8080/api'
   },
   // vendor: ["lodash"],
   plugins: [
@@ -79,12 +82,13 @@ module.exports = {
   css: [
     '@/assets/scss/main.scss',
     '@/assets/scss/carousel.scss',
+    // '@/assets/scss/pageloader.scss',
   ],
   /*
    ** Customize the progress bar color
    */
   loading: {
-    color: '#3B8070'
+    color : '#00d1b2'
   },
   /*
    ** Build configuration

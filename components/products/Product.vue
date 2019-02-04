@@ -10,14 +10,13 @@
   <div class="card-content">
     <div class="media">
       <div class="media-content">
-        <nuxt-link :to="link" class="title is-5">{{ product.name }}</nuxt-link>
+        <nuxt-link :to="link" class="title is-6">{{ product.name }}</nuxt-link>
       </div>
     </div>
     <div class="content">
-      <p v-if="product.description">
-        {{ product.description }}
-      </p>
-      <span class="tag is-rounded is-medium">{{ price }}</span>
+      <p v-if="product.description">{{ product.description }}</p>
+      <span class="tag">{{ price }}</span>
+      <span class="tag is-primary">{{ product.price_varies ? 'Ada Variasi' : 'Tidak ada Variasi'}}</span>
     </div>
   </div>
 </div>
