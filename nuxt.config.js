@@ -34,7 +34,8 @@ module.exports = {
       {
         rel: 'stylesheet',
         href: 'https://cdn.jsdelivr.net/npm/bulma-pageloader@2.1.0/dist/css/bulma-pageloader.min.css'
-      }]
+      }
+    ]
   },
 
   modules: [
@@ -43,8 +44,12 @@ module.exports = {
     // 'nuxt-fontawesome',
   ],
   auth: {
-
     strategies: {
+      google: {
+        client_id: '309688993186-pdqs35nr2ubhm44ntdc5bu26vr2dek51.apps.googleusercontent.com',
+        user:false,
+        redirect_uri:'http://127.0.0.1:8000/api/auth/google/callback'
+      },
       local: {
         scopeKey: 'scope',
         endpoints: {
@@ -63,10 +68,22 @@ module.exports = {
             propertyName: 'data'
           }
         },
-        // tokenRequired: true,
-        // tokenType: 'bearer',
+        tokenRequired: true,
+        tokenType: 'bearer',
       }
-    }
+    },
+    // redirect: {
+    //   login: {
+    //       url: 'http://127.0.0.1:8000/api/auth/google',
+    //       method: 'get'
+    //   },
+    //   logout: '/auth/logout',
+    //   user: '/auth/me',
+    //   callback: {
+    //     url: 'http://127.0.0.1:8000/api/auth/google/callback',
+    //     method: 'get'
+    //   }
+    // }
   },
 
   axios: {
@@ -88,7 +105,7 @@ module.exports = {
    ** Customize the progress bar color
    */
   loading: {
-    color : '#00d1b2'
+    color: '#00d1b2'
   },
   /*
    ** Build configuration

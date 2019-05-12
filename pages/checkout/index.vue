@@ -7,8 +7,6 @@
           <ShippingAddress
           :addresses="addresses" v-model="form.address_id"
           />
-
-
           <article class="message" v-if="shippingMethodId">
             <div class="message-body">
               <h1 class="title is-5">Shipping</h1>

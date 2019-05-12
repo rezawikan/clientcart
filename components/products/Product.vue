@@ -17,6 +17,7 @@
       <p v-if="product.description">{{ product.description }}</p>
       <span class="tag">{{ price }}</span>
       <span class="tag is-primary">{{ product.price_varies ? 'Ada Variasi' : 'Tidak ada Variasi'}}</span>
+      <span class="tag is-warning" v-if="!product.in_stock">Habis</span>
     </div>
   </div>
 </div>
@@ -35,7 +36,7 @@ export default {
   computed: {
     link() {
       return {
-        name: 'products-slug',
+        name: 'produk-slug',
         params: {
           slug: this.product.slug,
         }

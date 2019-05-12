@@ -4,10 +4,13 @@
 
 $button-border-width : 0;
 $radius: 0;
+$box-radius: 0;
 
 
 @import '~bulma';
 @import '~assets/scss/megamenu';
+
+@import '~bulma-divider/src/sass/index';
 
 
 html {

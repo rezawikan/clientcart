@@ -144,8 +144,8 @@
             <!-- <nuxt-link :to="{ 'name' : 'cart' }" class="navbar-item">Cart ({{ cartCount }})</nuxt-link> -->
             <template v-if="!$auth.loggedIn">
               <div class="buttons">
-                <nuxt-link :to="{ 'name' : 'auth-signup' }" class="button is-primary">Sign up</nuxt-link>
-                <nuxt-link :to="{ 'name' : 'auth-signin' }" class="button is-light">Log In</nuxt-link>
+                <nuxt-link :to="{ 'name' : 'daftar' }" class="button is-primary">Daftar</nuxt-link>
+                <nuxt-link :to="{ 'name' : 'masuk' }" class="button is-light">Masuk</nuxt-link>
               </div>
             </template>
             <template v-else>

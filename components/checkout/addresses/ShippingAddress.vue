@@ -33,7 +33,7 @@
 
 
         <div class="field is-grouped">
-          <p class="control" v-if="localAddresses">
+          <p class="control" v-if="localAddresses.length">
             <a href="#" class="button is-info" @click.prevent="selecting = true">Change Shipping address</a>
           </p>
           <p class="control">
