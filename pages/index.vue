@@ -225,14 +225,47 @@
       </div>
     </div>
   </section>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-fluid">
+        <div class="columns is-mobile is-multiline">
+          <div class="column is-one-fifth-desktop is-one-third-tablet is-half-mobile" v-for="product in products" :key="product.slug">
+            <Product :product="product"/>
+          </div>
+          <div class="column is-12">
+            <Pagination :meta="meta"/>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
 </div>
 </template>
 
 <script>
+import { mapGetters, mapActions } from 'vuex'
 import FrontCarousel from '@/components/carousel/FrontCarousel'
+import Product from '@/components/products/Product'
 export default {
   components: {
-    FrontCarousel
+    FrontCarousel,
+    Product
+  },
+
+  computed: {
+    ...mapGetters({
+      products: 'products/products',
+      meta: 'products/meta'
+    })
+  },
+  methods: {
+    ...mapActions({
+      getProducts: 'products/getProducts',
+    })
+  },
+  created(){
+    this.getProducts({ ...this.$route.params, ...this.$route.query })
   }
 }
 </script>

@@ -15,12 +15,12 @@
   "dependencies": {
     "@nuxtjs/auth": "^4.5.3",
     "@nuxtjs/axios": "^5.4.1",
-    "bootstrap-vue": "^2.0.0-rc.19",
+    "bootstrap-vue": "^2.0.0-rc.20",
     "bulma": "^0.7.4",
     "bulma-divider": "^0.2.0",
     "bulma-extensions": "^4.1.1",
     "css-loader": "^2.1.1",
-    "nuxt": "^2.6.3",
+    "nuxt": "^2.7.1",
     "nuxt-sass-resources-loader": "^2.0.5",
     "query-string": "^6.5.0"
   },
